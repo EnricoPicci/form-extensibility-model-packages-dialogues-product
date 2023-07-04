@@ -7,6 +7,9 @@
     "paths": {
       "dialogue-A": [
         "dist/dialogue-a"
+      ],
+      "dialogue-A-product": [
+        "dist/dialogue-a-product"
       ]
     },
     "forceConsistentCasingInFileNames": true,
