@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { Route, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { FormAComponent } from './form-a/form-a.component';
 import { FormBComponent } from './form-b/form-b.component';
 import { FormCComponent } from './form-c/form-c.component';
-import { ProductDialogueComponent } from './dialogue-a-product.component';
+import { DialogueAProductComponent } from './dialogue-a-product.component';
 import { FormDComponent } from './form-d/form-d.component';
 
 // Code to be personalized for each dialogue
@@ -21,7 +21,7 @@ export const dialogueProductFormRoutes = [
 const routes: Routes = [
   {
     path: '',
-    component: ProductDialogueComponent,
+    component: DialogueAProductComponent,
     children: dialogueProductFormRoutes,
   },
 ];
@@ -31,4 +31,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class DialogueProductRoutingModule { }
+export class DialogueAProductRoutingModule { }

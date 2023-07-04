@@ -3,39 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dialogue-A": {
-      "projectType": "library",
-      "root": "projects/dialogue-a",
-      "sourceRoot": "projects/dialogue-a/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/dialogue-a/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/dialogue-a/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/dialogue-a/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "tsConfig": "projects/dialogue-a/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
-          }
-        }
-      }
-    },
     "dialogue-A-product": {
       "projectType": "library",
       "root": "projects/dialogue-a-product",

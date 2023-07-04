@@ -5,12 +5,7 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "paths": {
-      "dialogue-A": [
-        "dist/dialogue-a"
-      ],
-      "dialogue-A-product": [
-        "dist/dialogue-a-product"
-      ]
+      "dialogue-A-product": ["dist/dialogue-a-product"]
     },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -27,10 +22,7 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
